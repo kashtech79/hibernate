@@ -86,8 +86,8 @@ public class JdbcApplication implements CommandLineRunner {
                 repository.findById(10001));
 
 
-//    logger.info("All users -> {}",
-//                dao.findAll());
+    logger.info("All users -> {}",
+                repository.findAll());
 //
 
         logger.info("Inserting 10004 -> {}",
