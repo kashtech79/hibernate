@@ -89,13 +89,14 @@ public class JdbcApplication implements CommandLineRunner {
 //    logger.info("All users -> {}",
 //                dao.findAll());
 //
-//        logger.info("Deleting id 10002 -> {}",
-//                dao.deleteById(10002));
 
         logger.info("Inserting 10004 -> {}",
                 repository.insert(new Person( "Abdullah", "Jura", new Date())));
 
         logger.info("Inserting 10003 -> {}",
                 repository.update(new Person(10003, "Saeed", "Karachi", new Date())));
+
+        repository.deleteById(10002);
+
     }
 }
